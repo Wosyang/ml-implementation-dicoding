@@ -5,7 +5,7 @@ async function storeData(id, data) {
     ignoreUndefinedProperties: true
   });
   
-  const predictCollection = db.collection('prediction');
+  const predictCollection = db.collection('predictions');
   return predictCollection.doc(id).set(data);
 }
  
